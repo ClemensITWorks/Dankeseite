@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+    /*background-image: inherit url(untitled.png);*/
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Style the header */
+  header {
+    background-image: linear-gradient(to bottom right, rgb(230, 116, 116), rgb(230, 217, 217)); /*rgb(229, 182, 182);*/
+    padding:40px;
+    /*border-shadow: 5px.5px, gray;*/
+    text-align: center;
+    text-shadow: 5px 5px rgba(8, 4, 4, 0.4);
+    font-size: 35px;
+    color: whitesmoke;
+  }
+  
+
+  
+  .main-navh {
+    float: left;
+    list-style: none;
+    margin-top: 30px;
+    padding-left: 80px;
+    }
+    
+    .main-navh li{
+        display: inline-block;
+        /*background-color: rgb(137, 173, 241);*/
+        background-image: linear-gradient(to bottom, rgb(58, 58, 58),lightgray, lightgray, rgb(59, 59, 59));
+       padding: 5px;
+       border: 2px, black;
+    }
+    
+    .main-navh li a{ 
+        color: rgb(37, 23, 23);
+        text-shadow: 2px 1px rgba(219, 196, 196, 0.4);
+        padding: 15px 20px;
+        border: 2px solid grey;
+        font-family: fantasy;
+        font-size: 14px;
+    }
+    
+    .main-navh li.active a{
+        border: 2px solid black;
+    }
+    
+    .main-navh li a:hover{
+        border: 2px solid rgb(255, 50, 50);
+    }
+  
+  article {
+    float: left;
+    text-align: justify; 
+    padding-left: 80px;
+    padding-right: 80px;
+    /*margin-left: 20px;*/
+    margin: 5px 10px 5px 20px;
+    width: 70%;
+    background-color: #71d5ee;
+    height: 300px; /* only for demonstration, should be removed */
+  }
+
+  aside{
+    float: left;
+    width: 120px;
+    height: 80px;
+    margin: 5px;
+  }
+  
+  /* Clear floats after the columns */
+  section:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Style the footer */
+  footer {
+    background-image: linear-gradient(to bottom right, rgb(77, 233, 56), rgb(171, 231, 159));
+    background-color: rgb(125, 248, 136);
+    padding: 10px;
+    text-align: center;
+    text-shadow: 2px 2px darkgrey;
+    color: black;
+  }
+  
+  /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+  @media (max-width: 600px) {
+    nav, article {
+      width: 100%;
+      height: auto;
+    }

@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Style the header */
+  header {
+    background-color: rgb(229, 182, 182);
+    padding:20px;
+    text-align: center;
+    text-shadow: 5px 5px rgba(8, 4, 4, 0.4);
+    font-size: 35px;
+    color: whitesmoke;
+  }
+  
+  .main-navh {
+    float: left;
+    list-style: none;
+    margin-top: 30px;
+    padding-left: 80px;
+    }
+    
+    .main-navh li{
+        display: inline-block;
+        background-color: rgb(137, 241, 241);
+       padding: 5px;
+      
+    }
+    
+    .main-navh li a{ 
+        color: rgb(37, 23, 23);
+        text-shadow: 2px 1px rgba(219, 196, 196, 0.4);
+        padding: 15px 20px;
+        font-family: fantasy;
+        font-size: 14px;
+    }
+    
+    .main-navh li.active a{
+        border: 1px solid white;
+    }
+    
+    .main-navh li a:hover{
+        border: 1px solid white;
+    }
+  
+  article {
+    float: left;
+    text-align: justify; 
+    padding-left: 80px;
+    width: 70%;
+    background-color: #f1f1f1;
+    height: 300px; /* only for demonstration, should be removed */
+  }
+  
+  /* Clear floats after the columns */
+  section:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Style the footer */
+  footer {
+    background-color: rgb(125, 248, 136);
+    padding: 10px;
+    text-align: center;
+    text-shadow: 2px 2px darkgrey;
+    color: black;
+  }
+  
+  /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+  @media (max-width: 600px) {
+    nav, article {
+      width: 100%;
+      height: auto;
+    }
